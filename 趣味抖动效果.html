@@ -1,0 +1,89 @@
+<!--
+ * @Autor: ErioY
+ * @Date: 2019-10-15 20:05:43
+ * @Email: 1973545559@qq.com
+ * @Github: https://github.com/ErioY
+ * @LastEditors: ErioY
+ * @LastEditTime: 2019-10-15 20:55:04
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>趣味抖动效果</title>
+    <style>
+    body {
+        margin: 0;
+    }
+    .nav {
+        width: 1000px;
+        height: 200px;
+        background-color: #00ff66;
+        margin: 100px auto;
+    }
+    .nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+    }
+    .nav ul li {
+        /* width: 200px;
+        height: 200px; */
+        margin-left: 20px;
+        margin-top: 10px;
+        float: left;
+    }
+    .nav ul li img {
+        width: 220px;
+        height: 150px;
+        border-radius: 20px;
+    }
+    li:hover img {
+        animation: duang 0.5s;
+        /* transform: scale(1.25， 0.75); */
+    }
+    /* 创建动画 动画名称为duang ，抖动效果：控制多个位置*/
+    @keyframes duang {
+        0% {
+            /* 变形 */
+            transform: scale(1, 1); /* 宽度、高度 */
+            /* 缩放  1：原始大小 */
+        }
+        40% {
+            -webkit-transform: scale(1.25， 0.75);
+        }
+        50% {
+            -webkit-transform: scale(0.8， 1.2);
+        }
+        60% {
+            -webkit-transform: scale(1.15， 0.85);
+        }
+        70% {
+            -webkit-transform: scale(0.9， 1.1);
+        }
+        80% {
+            -webkit-transform: scale(1.05， 0.95);
+        }
+        90% {
+            -webkit-transform: scale(0.8， 1.2);
+        }
+        100% {
+            -webkit-transform: scale(1.1, 1.1);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><img src="img/1.jpg" alt=""></li>
+            <li><img src="img/2.jpg" alt=""></li>
+            <li><img src="img/3.jpg" alt=""></li>
+            <li><img src="img/4.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>
